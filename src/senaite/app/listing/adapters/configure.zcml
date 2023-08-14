@@ -9,4 +9,13 @@
            zope.publisher.interfaces.browser.IBrowserRequest"
       factory=".childfolderitems.ChildFolderItems"/>
 
+  <!-- Samples view with additional filters and columns -->
+  <subscriber
+    for="bika.lims.browser.analysisrequest.AnalysisRequestsView
+         bika.lims.interfaces.IAnalysisRequestsFolder"
+    provides="senaite.app.listing.interfaces.IListingViewAdapter"
+    factory=".samples.SamplesListingViewAdapter"/>
+    
 </configure>
+
+
